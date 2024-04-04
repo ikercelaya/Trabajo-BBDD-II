@@ -6,22 +6,187 @@
     },
     {
         "id_director": 2,
-        "nombre": "Quentin Tarantino",
-        "fecha_nacimiento": "1963-03-27"
-    },
-    {
-        "id_director": 3,
         "nombre": "Martin Scorsese",
         "fecha_nacimiento": "1942-11-17"
     },
     {
+        "id_director": 3,
+        "nombre": "Steven Spielberg",
+        "fecha_nacimiento": "1946-12-18"
+    },
+    {
         "id_director": 4,
-        "nombre": "Sofia Coppola",
-        "fecha_nacimiento": "1971-05-14"
+        "nombre": "Quentin Tarantino",
+        "fecha_nacimiento": "1963-03-27"
     },
     {
         "id_director": 5,
-        "nombre": "Bong Joon Ho",
+        "nombre": "Ridley Scott",
+        "fecha_nacimiento": "1937-11-30"
+    },
+    {
+        "id_director": 6,
+        "nombre": "David Fincher",
+        "fecha_nacimiento": "1962-08-28"
+    },
+    {
+        "id_director": 7,
+        "nombre": "James Cameron",
+        "fecha_nacimiento": "1954-08-16"
+    },
+    {
+        "id_director": 8,
+        "nombre": "Peter Jackson",
+        "fecha_nacimiento": "1961-10-31"
+    },
+    {
+        "id_director": 9,
+        "nombre": "Alfred Hitchcock",
+        "fecha_nacimiento": "1899-08-13"
+    },
+    {
+        "id_director": 10,
+        "nombre": "Stanley Kubrick",
+        "fecha_nacimiento": "1928-07-26"
+    },
+    {
+        "id_director": 11,
+        "nombre": "Clint Eastwood",
+        "fecha_nacimiento": "1930-05-31"
+    },
+    {
+        "id_director": 12,
+        "nombre": "Tim Burton",
+        "fecha_nacimiento": "1958-08-25"
+    },
+    {
+        "id_director": 13,
+        "nombre": "Francis Ford Coppola",
+        "fecha_nacimiento": "1939-04-07"
+    },
+    {
+        "id_director": 14,
+        "nombre": "Woody Allen",
+        "fecha_nacimiento": "1935-12-01"
+    },
+    {
+        "id_director": 15,
+        "nombre": "Steven Soderbergh",
+        "fecha_nacimiento": "1963-01-14"
+    },
+    {
+        "id_director": 16,
+        "nombre": "David Lynch",
+        "fecha_nacimiento": "1946-01-20"
+    },
+    {
+        "id_director": 17,
+        "nombre": "Paul Thomas Anderson",
+        "fecha_nacimiento": "1970-06-26"
+    },
+    {
+        "id_director": 18,
+        "nombre": "Ang Lee",
+        "fecha_nacimiento": "1954-10-23"
+    },
+    {
+        "id_director": 19,
+        "nombre": "Martin McDonagh",
+        "fecha_nacimiento": "1970-03-26"
+    },
+    {
+        "id_director": 20,
+        "nombre": "Alejandro González Iñárritu",
+        "fecha_nacimiento": "1963-08-15"
+    },
+    {
+        "id_director": 21,
+        "nombre": "Greta Gerwig",
+        "fecha_nacimiento": "1983-08-04"
+    },
+    {
+        "id_director": 22,
+        "nombre": "Darren Aronofsky",
+        "fecha_nacimiento": "1969-02-12"
+    },
+    {
+        "id_director": 23,
+        "nombre": "Barry Jenkins",
+        "fecha_nacimiento": "1979-11-19"
+    },
+    {
+        "id_director": 24,
+        "nombre": "Guillermo del Toro",
+        "fecha_nacimiento": "1964-10-09"
+    },
+    {
+        "id_director": 25,
+        "nombre": "Denis Villeneuve",
+        "fecha_nacimiento": "1967-10-03"
+    },
+    {
+        "id_director": 26,
+        "nombre": "Ava DuVernay",
+        "fecha_nacimiento": "1972-08-24"
+    },
+    {
+        "id_director": 27,
+        "nombre": "Spike Lee",
+        "fecha_nacimiento": "1957-03-20"
+    },
+    {
+        "id_director": 28,
+        "nombre": "Wes Anderson",
+        "fecha_nacimiento": "1969-05-01"
+    },
+    {
+        "id_director": 29,
+        "nombre": "Jordan Peele",
+        "fecha_nacimiento": "1979-02-21"
+    },
+    {
+        "id_director": 30,
+        "nombre": "Lynne Ramsay",
+        "fecha_nacimiento": "1969-12-05"
+    },
+    {
+        "id_director": 31,
+        "nombre": "David O. Russell",
+        "fecha_nacimiento": "1958-08-20"
+    },
+    {
+        "id_director": 32,
+        "nombre": "Ari Aster",
+        "fecha_nacimiento": "1986-07-15"
+    },
+    {
+        "id_director": 33,
+        "nombre": "Patty Jenkins",
+        "fecha_nacimiento": "1971-07-24"
+    },
+    {
+        "id_director": 34,
+        "nombre": "Taika Waititi",
+        "fecha_nacimiento": "1975-08-16"
+    },
+    {
+        "id_director": 35,
+        "nombre": "Bong Joon-ho",
         "fecha_nacimiento": "1969-09-14"
+    },
+    {
+        "id_director": 36,
+        "nombre": "Christopher McQuarrie",
+        "fecha_nacimiento": "1968-10-25"
+    },
+    {
+        "id_director": 37,
+        "nombre": "Barry Levinson",
+        "fecha_nacimiento": "1942-04-06"
+    },
+    {
+        "id_director": 38,
+        "nombre": "Kathryn Bigelow",
+        "fecha_nacimiento": "1951-11-27"
     }
 ]
