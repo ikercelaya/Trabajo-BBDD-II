@@ -1,0 +1,27 @@
+[
+    {
+        "id_director": 1,
+        "nombre": "Christopher Nolan",
+        "fecha_nacimiento": "1970-07-30"
+    },
+    {
+        "id_director": 2,
+        "nombre": "Quentin Tarantino",
+        "fecha_nacimiento": "1963-03-27"
+    },
+    {
+        "id_director": 3,
+        "nombre": "Martin Scorsese",
+        "fecha_nacimiento": "1942-11-17"
+    },
+    {
+        "id_director": 4,
+        "nombre": "Sofia Coppola",
+        "fecha_nacimiento": "1971-05-14"
+    },
+    {
+        "id_director": 5,
+        "nombre": "Bong Joon Ho",
+        "fecha_nacimiento": "1969-09-14"
+    }
+]
