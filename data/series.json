@@ -1,0 +1,37 @@
+[
+    {
+        "id_serie": 1,
+        "titulo": "Breaking Bad",
+        "temporadas": 5,
+        "fecha_inicio": "2008-01-20",
+        "id_director": 3
+    },
+    {
+        "id_serie": 2,
+        "titulo": "Stranger Things",
+        "temporadas": 4,
+        "fecha_inicio": "2016-07-15",
+        "id_director": 4
+    },
+    {
+        "id_serie": 3,
+        "titulo": "The Crown",
+        "temporadas": 4,
+        "fecha_inicio": "2016-11-04",
+        "id_director": 1
+    },
+    {
+        "id_serie": 4,
+        "titulo": "Black Mirror",
+        "temporadas": 5,
+        "fecha_inicio": "2011-12-04",
+        "id_director": 2
+    },
+    {
+        "id_serie": 5,
+        "titulo": "The Mandalorian",
+        "temporadas": 2,
+        "fecha_inicio": "2019-11-12",
+        "id_director": 5
+    }
+]

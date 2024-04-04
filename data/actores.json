@@ -1,0 +1,27 @@
+[
+    {
+        "id_actor": 1,
+        "nombre": "Leonardo DiCaprio",
+        "fecha_nacimiento": "1974-11-11"
+    },
+    {
+        "id_actor": 2,
+        "nombre": "Scarlett Johansson",
+        "fecha_nacimiento": "1984-11-22"
+    },
+    {
+        "id_actor": 3,
+        "nombre": "Tom Hanks",
+        "fecha_nacimiento": "1956-07-09"
+    },
+    {
+        "id_actor": 4,
+        "nombre": "Natalie Portman",
+        "fecha_nacimiento": "1981-06-09"
+    },
+    {
+        "id_actor": 5,
+        "nombre": "Brad Pitt",
+        "fecha_nacimiento": "1963-12-18"
+    }
+]
