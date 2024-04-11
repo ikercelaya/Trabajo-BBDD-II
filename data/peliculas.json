@@ -1,0 +1,198 @@
+[
+    {
+      "titulo": "Inception",
+      "fecha_estreno": "2010-07-16",
+      "id_director": 1
+    },
+    {
+      "titulo": "Pulp Fiction",
+      "fecha_estreno": "1994-10-14",
+      "id_director": 2
+    },
+    {
+      "titulo": "The Irishman",
+      "fecha_estreno": "2019-09-27",
+      "id_director": 3
+    },
+    {
+      "titulo": "Lost in Translation",
+      "fecha_estreno": "2003-09-12",
+      "id_director": 4
+    },
+    {
+      "titulo": "Parasite",
+      "fecha_estreno": "2019-05-30",
+      "id_director": 5
+    },
+    {
+      "titulo": "Fight Club",
+      "fecha_estreno": "1999-10-15",
+      "id_director": 6
+    },
+    {
+      "titulo": "Forrest Gump",
+      "fecha_estreno": "1994-07-06",
+      "id_director": 7
+    },
+    {
+      "titulo": "Gravity",
+      "fecha_estreno": "2013-10-04",
+      "id_director": 8
+    },
+    {
+      "titulo": "Blade Runner 2049",
+      "fecha_estreno": "2017-10-06",
+      "id_director": 9
+    },
+    {
+      "titulo": "Avatar",
+      "fecha_estreno": "2009-12-18",
+      "id_director": 10
+    },
+    {
+      "titulo": "2001: A Space Odyssey",
+      "fecha_estreno": "1968-04-02",
+      "id_director": 11
+    },
+    {
+      "titulo": "Fargo",
+      "fecha_estreno": "1996-04-05",
+      "id_director": 12
+    },
+    {
+      "titulo": "The Grand Budapest Hotel",
+      "fecha_estreno": "2014-03-28",
+      "id_director": 13
+    },
+    {
+      "titulo": "Pan's Labyrinth",
+      "fecha_estreno": "2006-10-20",
+      "id_director": 14
+    },
+    {
+      "titulo": "Volver",
+      "fecha_estreno": "2006-03-17",
+      "id_director": 15
+    },
+    {
+      "titulo": "Spirited Away",
+      "fecha_estreno": "2001-07-20",
+      "id_director": 16
+    },
+    {
+      "titulo": "Django Unchained",
+      "fecha_estreno": "2012-12-25",
+      "id_director": 2
+    },
+    {
+      "titulo": "Little Women",
+      "fecha_estreno": "2019-12-25",
+      "id_director": 17
+    },
+    {
+      "titulo": "Birdman",
+      "fecha_estreno": "2014-10-17",
+      "id_director": 18
+    },
+    {
+      "titulo": "Do the Right Thing",
+      "fecha_estreno": "1989-06-30",
+      "id_director": 19
+    },
+    {
+      "titulo": "La La Land",
+      "fecha_estreno": "2016-12-09",
+      "id_director": 20
+    },
+    {
+      "titulo": "Birds of Prey",
+      "fecha_estreno": "2020-02-07",
+      "id_director": 21
+    },
+    {
+      "titulo": "Lincoln",
+      "fecha_estreno": "2012-11-09",
+      "id_director": 22
+    },
+    {
+      "titulo": "The Revenant",
+      "fecha_estreno": "2015-12-25",
+      "id_director": 23
+    },
+    {
+      "titulo": "Casino",
+      "fecha_estreno": "1995-11-22",
+      "id_director": 3
+    },
+    {
+      "titulo": "The Shape of Water",
+      "fecha_estreno": "2017-12-22",
+      "id_director": 14
+    },
+    {
+      "titulo": "Talk to Her",
+      "fecha_estreno": "2002-03-14",
+      "id_director": 15
+    },
+    {
+      "titulo": "Sweeney Todd: The Demon Barber of Fleet Street",
+      "fecha_estreno": "2007-12-21",
+      "id_director": 24
+    },
+    {
+      "titulo": "The Dark Knight",
+      "fecha_estreno": "2008-07-18",
+      "id_director": 1
+    },
+    {
+      "titulo": "Spotlight",
+      "fecha_estreno": "2015-11-06",
+      "id_director": 25
+    },
+    {
+      "titulo": "Joker",
+      "fecha_estreno": "2019-10-04",
+      "id_director": 18
+    },
+    {
+      "titulo": "A Beautiful Mind",
+      "fecha_estreno": "2001-01-04",
+      "id_director": 7
+    },
+    {
+      "titulo": "Gladiator",
+      "fecha_estreno": "2000-05-05",
+      "id_director": 26
+    },
+    {
+      "titulo": "The Departed",
+      "fecha_estreno": "2006-10-06",
+      "id_director": 3
+    },
+    {
+      "titulo": "Once Upon a Time in Hollywood",
+      "fecha_estreno": "2019-07-26",
+      "id_director": 2
+    },
+    {
+      "titulo": "Amélie",
+      "fecha_estreno": "2001-04-25",
+      "id_director": 27
+    },
+    {
+      "titulo": "No Country for Old Men",
+      "fecha_estreno": "2007-11-21",
+      "id_director": 12
+    },
+    {
+      "titulo": "Mad Max: Fury Road",
+      "fecha_estreno": "2015-05-15",
+      "id_director": 28
+    },
+    {
+      "titulo": "The Lord of the Rings: The Return of the King",
+      "fecha_estreno": "2003-12-17",
+      "id_director": 29
+    }
+  ]
+  
