@@ -1,0 +1,95 @@
+{
+  "series": [
+    {
+      "id_serie": 1,
+      "titulo": "Breaking Bad",
+      "temporadas": 5,
+      "fecha_inicio": "2008-01-20",
+      "id_director": 3
+    },
+    {
+      "id_serie": 2,
+      "titulo": "Stranger Things",
+      "temporadas": 4,
+      "fecha_inicio": "2016-07-15",
+      "id_director": 4
+    },
+    {
+      "id_serie": 3,
+      "titulo": "The Crown",
+      "temporadas": 4,
+      "fecha_inicio": "2016-11-04",
+      "id_director": 1
+    },
+    {
+      "id_serie": 4,
+      "titulo": "Black Mirror",
+      "temporadas": 5,
+      "fecha_inicio": "2011-12-04",
+      "id_director": 2
+    },
+    {
+      "id_serie": 5,
+      "titulo": "The Mandalorian",
+      "temporadas": 2,
+      "fecha_inicio": "2019-11-12",
+      "id_director": 5
+    },
+    {
+      "id_serie": 6,
+      "titulo": "Friends",
+      "temporadas": 10,
+      "fecha_inicio": "1994-09-22",
+      "id_director": 30
+    },
+    {
+      "id_serie": 7,
+      "titulo": "Juego de Tronos",
+      "temporadas": 8,
+      "fecha_inicio": "2011-04-17",
+      "id_director": 31
+    },
+    {
+      "id_serie": 8,
+      "titulo": "The Office",
+      "temporadas": 9,
+      "fecha_inicio": "2005-03-24",
+      "id_director": 32
+    },
+    {
+      "id_serie": 9,
+      "titulo": "Sherlock",
+      "temporadas": 4,
+      "fecha_inicio": "2010-07-25",
+      "id_director": 33
+    },
+    {
+      "id_serie": 10,
+      "titulo": "Narcos",
+      "temporadas": 3,
+      "fecha_inicio": "2015-08-28",
+      "id_director": 34
+    },
+    {
+      "id_serie": 11,
+      "titulo": "Peaky Blinders",
+      "temporadas": 5,
+      "fecha_inicio": "2013-09-12",
+      "id_director": 35
+    },
+    {
+      "id_serie": 12,
+      "titulo": "The Witcher",
+      "temporadas": 2,
+      "fecha_inicio": "2019-12-20",
+      "id_director": 36
+    },
+    {
+      "id_serie": 13,
+      "titulo": "La casa de papel",
+      "temporadas": 5,
+      "fecha_inicio": "2017-05-02",
+      "id_director": 37
+    }
+  ]
+}
