@@ -23,5 +23,185 @@
         "id_director": 5,
         "nombre": "Bong Joon Ho",
         "fecha_nacimiento": "1969-09-14"
+    },
+    {
+        "id_director": 6,
+        "nombre": "David Fincher",
+        "fecha_nacimiento": "1962-08-28"
+    },
+    {
+        "id_director": 7,
+        "nombre": "Steven Spielberg",
+        "fecha_nacimiento": "1946-12-18"
+    },
+    {
+        "id_director": 8,
+        "nombre": "Alfonso Cuarón",
+        "fecha_nacimiento": "1961-11-28"
+    },
+    {
+        "id_director": 9,
+        "nombre": "Denis Villeneuve",
+        "fecha_nacimiento": "1967-10-03"
+    },
+    {
+        "id_director": 10,
+        "nombre": "James Cameron",
+        "fecha_nacimiento": "1954-08-16"
+    },
+    {
+        "id_director": 11,
+        "nombre": "Stanley Kubrick",
+        "fecha_nacimiento": "1928-07-26"
+    },
+    {
+        "id_director": 12,
+        "nombre": "Coen Brothers",
+        "fecha_nacimiento": "1954-11-29"
+    },
+    {
+        "id_director": 13,
+        "nombre": "Wes Anderson",
+        "fecha_nacimiento": "1969-05-01"
+    },
+    {
+        "id_director": 14,
+        "nombre": "Guillermo del Toro",
+        "fecha_nacimiento": "1964-10-09"
+    },
+    {
+        "id_director": 15,
+        "nombre": "Pedro Almodóvar",
+        "fecha_nacimiento": "1949-09-25"
+    },
+    {
+        "id_director": 16,
+        "nombre": "Hayao Miyazaki",
+        "fecha_nacimiento": "1941-01-05"
+    },
+    {
+        "id_director": 17,
+        "nombre": "Greta Gerwig",
+        "fecha_nacimiento": "1983-08-04"
+    },
+    {
+        "id_director": 18,
+        "nombre": "Alejandro González Iñárritu",
+        "fecha_nacimiento": "1963-08-15"
+    },
+    {
+        "id_director": 19,
+        "nombre": "Spike Lee",
+        "fecha_nacimiento": "1957-03-20"
+    },
+    {
+        "id_director": 20,
+        "nombre": "Denis Villeneuve",
+        "fecha_nacimiento": "1967-10-03"
+    },
+    {
+        "id_director": 21,
+        "nombre": "James Cameron",
+        "fecha_nacimiento": "1954-08-16"
+    },
+    {
+        "id_director": 22,
+        "nombre": "Stanley Kubrick",
+        "fecha_nacimiento": "1928-07-26"
+    },
+    {
+        "id_director": 23,
+        "nombre": "Coen Brothers",
+        "fecha_nacimiento": "1954-11-29"
+    },
+    {
+        "id_director": 24,
+        "nombre": "Wes Anderson",
+        "fecha_nacimiento": "1969-05-01"
+    },
+    {
+        "id_director": 25,
+        "nombre": "Guillermo del Toro",
+        "fecha_nacimiento": "1964-10-09"
+    },
+    {
+        "id_director": 26,
+        "nombre": "Pedro Almodóvar",
+        "fecha_nacimiento": "1949-09-25"
+    },
+    {
+        "id_director": 27,
+        "nombre": "Hayao Miyazaki",
+        "fecha_nacimiento": "1941-01-05"
+    },
+    {
+        "id_director": 28,
+        "nombre": "Greta Gerwig",
+        "fecha_nacimiento": "1983-08-04"
+    },
+    {
+        "id_director": 29,
+        "nombre": "Alejandro González Iñárritu",
+        "fecha_nacimiento": "1963-08-15"
+    },
+    {
+        "id_director": 30,
+        "nombre": "Spike Lee",
+        "fecha_nacimiento": "1957-03-20"
+    },
+    {
+        "id_director": 31,
+        "nombre": "Denis Villeneuve",
+        "fecha_nacimiento": "1967-10-03"
+    },
+    {
+        "id_director": 32,
+        "nombre": "James Cameron",
+        "fecha_nacimiento": "1954-08-16"
+    },
+    {
+        "id_director": 33,
+        "nombre": "Stanley Kubrick",
+        "fecha_nacimiento": "1928-07-26"
+    },
+    {
+        "id_director": 34,
+        "nombre": "Coen Brothers",
+        "fecha_nacimiento": "1954-11-29"
+    },
+    {
+        "id_director": 35,
+        "nombre": "Wes Anderson",
+        "fecha_nacimiento": "1969-05-01"
+    },
+    {
+        "id_director": 36,
+        "nombre": "Guillermo del Toro",
+        "fecha_nacimiento": "1964-10-09"
+    },
+    {
+        "id_director": 37,
+        "nombre": "Pedro Almodóvar",
+        "fecha_nacimiento": "1949-09-25"
+    },
+    {
+        "id_director": 38,
+        "nombre": "Hayao Miyazaki",
+        "fecha_nacimiento": "1941-01-05"
+    },
+    {
+        "id_director": 39,
+        "nombre": "Greta Gerwig",
+        "fecha_nacimiento": "1983-08-04"
+    },
+    {
+        "id_director": 40,
+        "nombre": "Alejandro González Iñárritu",
+        "fecha_nacimiento": "1963-08-15"
+    },
+    {
+        "id_director": 41,
+        "nombre": "Spike Lee",
+        "fecha_nacimiento": "1957-03-20"
     }
 ]
