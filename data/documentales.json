@@ -33,5 +33,152 @@
         "fecha_estreno": "2017-08-04",
         "tema": "Doping",
         "id_director": 5
+    },
+    {
+        "id_documental": 6,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 7,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 8,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 9,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 10,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 11,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 12,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 13,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 14,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 15,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 16,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 17,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 18,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 19,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 20,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 21,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 22,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 23,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
+    },
+    {
+        "id_documental": 24,
+        "titulo": "Won't You Be My Neighbor?",
+        "fecha_estreno": "2018-06-08",
+        "tema": "Biography",
+        "id_director": 6
+    },
+    {
+        "id_documental": 25,
+        "titulo": "The Last Dance",
+        "fecha_estreno": "2020-04-19",
+        "tema": "Sports",
+        "id_director": 7
+    },
+    {
+        "id_documental": 26,
+        "titulo": "Free Solo",
+        "fecha_estreno": "2018-12-14",
+        "tema": "Adventure",
+        "id_director": 8
     }
 ]
