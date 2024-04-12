@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas - Estilo Netflix</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .header {
+            background-color: #e50914;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .movie {
+            width: 220px;
+            background-color: #333;
+            margin: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .movie img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+        }
+        .movie-info {
+            padding: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .movie-details {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Catálogo al Estilo <span style="font-weight: bold;">Netflix</span> de Películas</div>
+    <div class="catalogue">
+        <!-- Bloques para cada película -->
+        <div class="movie">
+            <img src="movie-placeholder.jpg" alt="Inception">
+            <div class="movie-info">
+                <div class="movie-title">Inception</div>
+                <div class="movie-details">Fecha de Estreno: 2010-07-16</div>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="movie-placeholder.jpg" alt="Pulp Fiction">
+            <div class="movie-info">
+                <div class="movie-title">Pulp Fiction</div>
+                <div class="movie-details">Fecha de Estreno: 1994-10-14</div>
+            </div>
+        </div>
+        <!-- Continúa con el resto de las películas siguiendo el mismo patrón -->
+        <!-- ... -->
+        <div class="movie">
+            <img src="movie-placeholder.jpg" alt="The Lord of the Rings: The Return of the King">
+            <div class="movie-info">
+                <div class="movie-title">The Lord of the Rings: The Return of the King</div>
+                <div class="movie-details">Fecha de Estreno: 2003-12-17</div>
+            </div>
+        </div>
+        <!-- Fin de bloques para cada película -->
+    </div>
+</body>
+</html>
