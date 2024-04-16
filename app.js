@@ -15,14 +15,20 @@ app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 
 const directorRouters = require('./routes/directorRoutes');
+const actorRouters = require('./routes/actorRoutes');
+const documentalRouters = require('./routes/documentalRoutes');
+const peliculaRouters = require('./routes/peliculaRoutes');
+const serieRouters = require('./routes/serieRoutes');
 const { init } = require('./models/Actor');
-//acabar
 
 app.use(cookieParser.json({limit: '50mb'}));
 app.use(cookieParser.urlencoded({extended: true}));
 
 app.use(directorRouters);
-//acabar
+app.use(actorRouters);
+app.use(documentalRouters);
+app.use(peliculaRouters);
+app.use(serieRouters);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
