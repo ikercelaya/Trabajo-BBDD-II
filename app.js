@@ -1,53 +1,37 @@
 var createError = require('http-errors');
 var express = require('express');
+var initDB = require('./modules/mongodb/mongodb.module').init;
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
 
-const port = 27017;
+const port = 3001;
 
-var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
-var UserController = require('./modules/user/user.module')().UserController;
+app.set('views', path.join(__dirname, 'views'));
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
+const directorRouters = require('./routes/directorRoutes');
+const actorRouters = require('./routes/actorRoutes');
+const documentalRouters = require('./routes/documentalRoutes');
+const peliculaRouters = require('./routes/peliculaRoutes');
+const serieRouters = require('./routes/serieRoutes');
+const { init } = require('./models/Actor');
 
-MongoDBUtil.init();
+app.use(cookieParser.json({limit: '50mb'}));
+app.use(cookieParser.urlencoded({extended: true}));
 
-app.use('/users', UserController);
+app.use(directorRouters);
+app.use(actorRouters);
+app.use(documentalRouters);
+app.use(peliculaRouters);
+app.use(serieRouters);
 
-app.get('/', function (req, res) {
-    var pkg = require(path.join(__dirname, 'package.json'));
-    res.json({
-        name: pkg.name,
-        version: pkg.version,
-        status: 'up'
-    });
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
 
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    next(createError(404));
-});
-
-// error handler
-app.use(function (err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-    // render the error page
-    res.status(err.status || 500);
-
-    res.json({
-        message: res.locals.message,
-        error: res.locals.error
-    });
-});
-
-module.exports = app;
+initDB();
