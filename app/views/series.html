@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series - Estilo Netflix</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .header {
+            background-color: #e50914;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+        }
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .series {
+            width: 220px;
+            background-color: #333;
+            margin: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .series img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+        }
+        .series-info {
+            padding: 15px;
+        }
+        .series-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .series-details {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Catálogo al Estilo <span style="font-weight: bold;">Netflix</span> de Series</div>
+    <div class="catalogue">
+        <!-- Bloques para cada serie -->
+        <div class="series">
+            <img src="series-placeholder.jpg" alt="Breaking Bad">
+            <div class="series-info">
+                <div class="series-title">Breaking Bad</div>
+                <div class="series-details">Temporadas: 5</div>
+                <div class="series-details">Fecha de inicio: 2008-01-20</div>
+            </div>
+        </div>
+        <div class="series">
+            <img src="series-placeholder.jpg" alt="Stranger Things">
+            <div class="series-info">
+                <div class="series-title">Stranger Things</div>
+                <div class="series-details">Temporadas: 4</div>
+                <div class="series-details">Fecha de inicio: 2016-07-15</div>
+            </div>
+        </div>
+        <!-- Continúa con el resto de las series siguiendo el mismo patrón -->
+        <!-- ... -->
+        <div class="series">
+            <img src="series-placeholder.jpg" alt="La casa de papel">
+            <div class="series-info">
+                <div class="series-title">La casa de papel</div>
+                <div class="series-details">Temporadas: 5</div>
+                <div class="series-details">Fecha de inicio: 2017-05-02</div>
+            </div>
+        </div>
+        <!-- Fin de bloques para cada serie -->
+    </div>
+</body>
+</html>
