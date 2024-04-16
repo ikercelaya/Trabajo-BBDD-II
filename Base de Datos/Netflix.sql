@@ -1,19 +1,23 @@
+-- Creación de la base de datos Netflix
+CREATE DATABASE IF NOT EXISTS Netflix;
+USE Netflix;
+
 -- Creación de tabla para Directores
-CREATE TABLE Directores (
+CREATE TABLE IF NOT EXISTS Directores (
     id_director INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     fecha_nacimiento DATE NOT NULL
 );
 
 -- Creación de tabla para Actores
-CREATE TABLE Actores (
+CREATE TABLE IF NOT EXISTS Actores (
     id_actor INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     fecha_nacimiento DATE NOT NULL
 );
 
 -- Creación de tabla para Películas
-CREATE TABLE Peliculas (
+CREATE TABLE IF NOT EXISTS Peliculas (
     id_pelicula INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     fecha_estreno DATE NOT NULL,
@@ -22,7 +26,7 @@ CREATE TABLE Peliculas (
 );
 
 -- Creación de tabla para Series
-CREATE TABLE Series (
+CREATE TABLE IF NOT EXISTS Series (
     id_serie INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     temporadas INT NOT NULL,
@@ -32,7 +36,7 @@ CREATE TABLE Series (
 );
 
 -- Creación de tabla para Documentales
-CREATE TABLE Documentales (
+CREATE TABLE IF NOT EXISTS Documentales (
     id_documental INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     fecha_estreno DATE NOT NULL,
@@ -42,7 +46,7 @@ CREATE TABLE Documentales (
 );
 
 -- Creación de tabla de asociación para Películas y Actores
-CREATE TABLE Pelicula_Actor (
+CREATE TABLE IF NOT EXISTS Pelicula_Actor (
     id_pelicula INT,
     id_actor INT,
     PRIMARY KEY (id_pelicula, id_actor),

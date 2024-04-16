@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var app = express();
 
+const port = 27017;
+
 var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
 
 var UserController = require('./modules/user/user.module')().UserController;

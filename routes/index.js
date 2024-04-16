@@ -1,13 +1,34 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const mainController = require('../controllers/mainController');
+const actorController = require('../controllers/actorController');
+const directorController = require('../controllers/directorController');
+const documentalController = require('../controllers/documentalController');
+const peliculaController = require('../controllers/peliculaController');
+const serieController = require('../controllers/serieController');
 
-/*/* GET home page. 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});*/
-// index page
-router.get('/', function(req, res, next) {
-    res.render('pages/index');
-});
+module.exports = () => {
+    router.get('/', mainController.home);
 
-module.exports = router;
+    router.get('/error', mainController.error);
+
+    router.get('/actors', actorController.getAllActors);
+
+    router.get('/peliculas', peliculaController.getAllPeliculas);
+
+    router.get('/documentales', documentalController.getAllDocumentales);
+
+    router.get('/director', directorController.getAllDirectors);
+
+    router.get('/actorSearch', actorController.searchActors);
+
+    router.get('/directorSearch', directorController.searchDirectors);
+    
+    router.get('/documentalSearch', documentalController.searchDocumental);
+
+    router.get('/peliculaSearch', peliculaController.searchPelicula);
+
+    router.get('/serie', serieController.getAllSeries);
+
+    return router;
+}
