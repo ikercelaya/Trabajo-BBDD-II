@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URI = 'mongodb://localhost:4000/netflix';
+const DB_URI = 'mongodb://localhost:27017/netflix';
 
 const connectDB = async () => {
     try {
