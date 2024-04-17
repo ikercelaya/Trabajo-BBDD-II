@@ -1,11 +1,4 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- * https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application-es
- */
-
-var app = require('../app');
+var app = require('../app.js');
 var debug = require('debug')('apiexpress:server');
 var http = require('http');
 

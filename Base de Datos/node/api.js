@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-let API = 'http://localhost:8000';
+let API = 'http://localhost:2002';
 
 export async function getdata() {
 const res = await fetch(API);
