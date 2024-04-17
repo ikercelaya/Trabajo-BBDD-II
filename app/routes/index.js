@@ -5,7 +5,7 @@ const directorController = require('../controllers/directorController');
 const documentalController = require('../controllers/documentalController');
 const peliculaController = require('../controllers/peliculaController');
 const serieController = require('../controllers/serieController');
-const getHomeData  = require('../controllers/home');
+const home  = require('../controllers/home');
 
 module.exports = () => {
     router.get('/', home.getHomeData);
