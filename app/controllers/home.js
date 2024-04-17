@@ -45,3 +45,11 @@ exports.getHomeData = async (req, res) => {
         res.status(500).send('Failed to retrieve data');
     }
 };
+
+// This function should be outside of the getHomeData function
+exports.error = function(req, res) {
+    // Logica adicional si es necesaria
+    res.status(500).render('error', {
+        message: 'Ha ocurrido un error inesperado.'
+    });
+};
