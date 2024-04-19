@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Netflix Database</title>
+    <link rel="icon" type="image/png" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            background-image: url('https://source.unsplash.com/1600x900/?cinema');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #e50914;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            background-color: rgba(20, 20, 20, 0.75);
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav {
+            background-color: #e50914;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .logo {
+            width: 200px;
+            margin: 40px auto;
+            display: block;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .category {
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category a {
+            color: #fff; 
+            text-decoration: none; 
+        }
+        .category img {
+            width: 300px;
+            height: 168px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/directores">Directores</a>
+        <a href="/actores">Actores</a>
+        <a href="/peliculas">Películas</a>
+        <a href="/series">Series</a>
+        <a href="/documentales">Documentales</a>
+    </nav>
+    <h1>Bienvenido a la Base de Datos de Netflix</h1>
+    <div class="container">
+        <div class="category">
+            <a href="/peliculas">
+                <img src="https://source.unsplash.com/300x168/?movies" alt="Películas">
+                <h2>Películas</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="/series">
+                <img src="https://source.unsplash.com/300x168/?tv-show" alt="Series">
+                <h2>Series</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="/documentales">
+                <img src="https://source.unsplash.com/300x168/?documentary" alt="Documentales">
+                <h2>Documentales</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="/directores">
+                <img src="https://source.unsplash.com/300x168/?director" alt="Directores">
+                <h2>Directores</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="/actores">
+                <img src="https://source.unsplash.com/300x168/?actors" alt="Actores">
+                <h2>Actores</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series - Netflix Database</title>
+    <link rel="icon" type="image/png" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            background-image: url('https://source.unsplash.com/1600x900/?tv-show');
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .serie {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .serie:hover {
+            transform: scale(1.05);
+        }
+        .serie-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .serie-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #e50914;
+            margin: 0 auto 20px;
+            width: 100%;
+        }
+        h2 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+        p, .data li {
+            color: #b3b3b3;
+            text-align: left;
+        }
+        .data {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .data li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        .data li::before {
+            content: "• ";
+            color: #e50914;
+        }
+        @media screen and (max-width: 768px) {
+            .serie {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Series Disponibles en Netflix</h1>
+        <div class="series">
+            <% series.forEach(serie => { %>
+                <div class="serie">
+                    <div class="serie-img">
+                        <% if (serie.titulo === "Stranger Things") { %>
+                            <img src="https://source.unsplash.com/featured/?strangerthings" alt="Portada de Stranger Things">
+                        <% } else if (serie.titulo === "Breaking Bad") { %>
+                            <img src="https://source.unsplash.com/featured/?breakingbad" alt="Portada de Breaking Bad">
+                        <% } else if (serie.titulo === "Game of Thrones") { %>
+                            <img src="https://source.unsplash.com/featured/?gameofthrones" alt="Portada de Game of Thrones">
+                        <% } else if (serie.titulo === "The Wire") { %>
+                            <img src="https://static.hbo.com/content/dam/hbodata/series/the-wire/ka/the-wire-ka-1920.jpg" alt="Portada de The Wire">
+                        <% } else if (serie.titulo === "Sherlock") { %>
+                            <img src="https://source.unsplash.com/featured/?sherlock" alt="Portada de Sherlock">
+                        <% } else if (serie.titulo === "Stranger Things") { %>
+                            <img src="https://source.unsplash.com/featured/?strangerthings" alt="Portada de Stranger Things">
+                        <% } else if (serie.titulo === "Westworld") { %>
+                            <img src="https://source.unsplash.com/featured/?westworld" alt="Portada de Westworld">
+                        <% } else if (serie.titulo === "Black Mirror") { %>
+                            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/13/09/black-mirror-fifteen-million-merrits.jpg" alt="Portada de Black Mirror">
+                        <% } else if (serie.titulo === "Friends") { %>
+                            <img src="https://source.unsplash.com/featured/?friends" alt="Portada de Friends">
+                        <% } else if (serie.titulo === "The Sopranos") { %>
+                            <img src="https://i.ebayimg.com/images/g/FB8AAOSwyP5Z6at0/s-l400.jpg" alt="Portada de The Sopranos">
+                        <% } else { %>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWa0GTCi4lLR5tB6EPS02ou8oFfVIQNh8fGThk0NSJtw&s" alt="Portada de <%= serie.titulo %>">
+                        <% } %>
+                    </div>
+                    <div class="serie-info">
+                        <h2><%= serie.titulo %> (<%= serie.pais %>)</h2>
+                        <ul class="data">
+                            <li><strong>Creador:</strong> <%= serie.creador %></li>
+                            <li><strong>Temporadas:</strong> <%= serie.temporadas %></li>
+                            <li><strong>Género:</strong> <%= serie.genero %></li>
+                            <li><strong>Idioma:</strong> <%= serie.idioma %></li>
+                            <li><strong>Fecha de Lanzamiento:</strong> <%= serie.fecha_lanzamiento %></li>
+                        </ul>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actores - Netflix</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/1600x900/?cinema');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(20, 20, 20, 0.9); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            color: #e50914; 
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .persona {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #222; 
+            border-radius: 8px; 
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s; 
+        }
+        .persona:hover {
+            transform: scale(1.03); 
+        }
+        .persona-img {
+            flex: 1;
+            max-width: 250px; 
+            margin-right: 20px;
+        }
+        .persona-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; 
+        }
+        .persona-info {
+            flex: 3;
+        }
+        .persona-info h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .persona-info p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .persona {
+                flex-direction: column;
+                text-align: center;
+            }
+            .persona-img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Actores Destacados de Netflix</h1>
+        <div class="personas">
+            <% actores.forEach(actor => { %>
+                <div class="persona">
+                    <div class="persona-img">
+                        <% if (actor.nombre === "Leonardo DiCaprio") { %>
+                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7cOVRwz9nSmJPRgUbDR1gnGC3Eju0y_2HwH_71Czh_nA6eSpG" alt="Foto de Leonardo DiCaprio" class="actor-foto">
+                        <% } else if (actor.nombre === "Brad Pitt") { %>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brad_Pitt_2019_by_Glenn_Francis.jpg/1200px-Brad_Pitt_2019_by_Glenn_Francis.jpg" alt="Foto de Brad Pitt" class="actor-foto">
+                        <% } else if (actor.nombre === "Morgan Freeman") { %>
+                            <img src="https://image.tmdb.org/t/p/w500/jPsLqiYGSofU4s6BjrxnefMfabb.jpg" alt="Foto de Morgan Freeman" class="actor-foto">
+                        <% } else if (actor.nombre === "Tom Hanks") { %>
+                            <img src="https://es.web.img2.acsta.net/pictures/16/04/26/10/00/472541.jpg" alt="Foto de Tom Hanks" class="actor-foto">
+                        <% } else if (actor.nombre === "Johnny Depp") { %>
+                            <img src="https://pics.filmaffinity.com/180860288211125-nm_200.jpg" alt="Foto de Johnny Depp" class="actor-foto">
+                        <% } else if (actor.nombre === "Robert Downey Jr.") { %>
+                            <img src="https://es.web.img2.acsta.net/c_310_420/pictures/22/03/21/14/03/3443055.jpg" alt="Foto de Robert Downey Jr." class="actor-foto">
+                        <% } else if (actor.nombre === "Matt Damon") { %>
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTM0NzYzNDgxMl5BMl5BanBnXkFtZTcwMDg2MTMyMw@@._V1_FMjpg_UX1000_.jpg" alt="Foto de Matt Damon" class="actor-foto">
+                        <% } else if (actor.nombre === "George Clooney") { %>
+                            <img src="https://pics.filmaffinity.com/201016808639568-nm_200.jpg" alt="Foto de"George Clooney" class="actor-foto">
+                        <% } else if (actor.nombre === "Christian Bale") { %>
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNzvW1geZi2Uo5aYeImgqD-FZnUQLl7DOPlqxSOFyvPrKSIGiR" alt="Foto de Christian Bale" class="actor-foto">
+                        <% } else if (actor.nombre === "Tom Cruise") { %>
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/tom-cruise-attends-the-photocall-of-top-gun-maverick-during-news-photo-1652944930.jpg?crop=0.670xw:1.00xh;0.209xw,0&resize=640:*" alt="Foto de Tom Cruise" class="actor-foto">
+                        <% } else { %>
+                            <img src="" alt="Foto de <%= actor.nombre %>" class="actor-foto">
+                        <% } %>
+                    </div>
+                    <div class="persona-info">
+                        <h2><%= actor.nombre %></h2>
+                        <p><strong>Fecha de Nacimiento:</strong> <%= actor.fecha_nacimiento %></p>
+                        <p><strong>Nacionalidad:</strong> <%= actor.nacionalidad %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

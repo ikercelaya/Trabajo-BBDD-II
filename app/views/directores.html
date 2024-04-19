@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directores - Netflix</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/1600x900/?cinema');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(20, 20, 20, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            color: #e50914;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .persona {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .persona-img {
+            flex: 1;
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .persona-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-height: 300px; 
+        }
+        .persona-info {
+            flex: 3;
+        }
+        .persona-info h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .persona-info p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .persona {
+                flex-direction: column;
+                text-align: center;
+            }
+            .persona-img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Directores Destacados de Netflix</h1>
+        <div class="personas">
+            <% directores.forEach(director => { %>
+                <div class="persona">
+                    <% if (director.nombre === "Christopher Nolan") { %>
+                        <img src="https://es.web.img2.acsta.net/c_310_420/pictures/14/10/30/10/59/215487.jpg" alt="Foto de Christopher Nolan">
+                    <% } else if (director.nombre === "Quentin Tarantino") { %>
+                        <img src="https://i.blogs.es/c96826/tarantino/500_333.jpeg" alt="Foto de Quentin Tarantino">
+                    <% } else if (director.nombre === "Steven Spielberg") { %>
+                        <img src="https://lh3.googleusercontent.com/proxy/NveuRqqMnayXOHKh-Nzlb54IvT3JsALoHGOiB-D0XBzSiPnkZg0psDLkb-XghrDyXDkSIMHkI9OIAiaQLRU3WJvNGss5RDaEewsVWGVMApAtFmowKxuMfU-rPqc6-GKkLYZywad3lHJELibhcJMYwNGwMXESpwTq1tlCNKBE8LYlV_g" alt="Foto de Steven Spielberg">
+                    <% } else if (director.nombre === "Martin Scorsese") { %>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Martin_Scorsese_%288249417617%29.jpg/220px-Martin_Scorsese_%288249417617%29.jpg" alt="Foto de Martin Scorsese">
+                    <% } else if (director.nombre === "James Cameron") { %>
+                        <img src="https://media.vandalsports.com/i/640x360/4-2024/2024489325_1.jpg" alt="Foto de James Cameron">
+                    <% } else if (director.nombre === "David Fincher") { %>
+                        <img src="https://pics.filmaffinity.com/078315252655922-nm_200.jpg" alt="Foto de David Fincher">
+                    <% } else if (director.nombre === "Ridley Scott") { %>
+                        <img src="https://imagenes.20minutos.es/files/image_640_360/uploads/imagenes/2021/11/23/ridley-scott.jpeg" alt="Foto de Ridley Scott">
+                    <% } else if (director.nombre === "Peter Jackson") { %>
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8Z-ASe__vAoUtflnH9HjqgDBMrgagzyFxWJLhSxLcDNHtaThY" alt="Foto de Peter Jackson">
+                    <% } else if (director.nombre === "Alfred Hitchcock") { %>
+                        <img src="https://images.photowall.com/products/79583/alfred-hitchcock-hour.jpg?h=699&q=85" alt="Foto de Alfred Hitchcock">
+                    <% } else if (director.nombre === "Tim Burton") { %>
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXkdM_Z-XxcI9DfpG4DxsmBAow8W1tQnLpldyn4TDK6K7khmUx" alt="Foto de Tim Burton">
+                    <% } else { %>
+                        <img src="https://source.unsplash.com/1600x900/?director" alt="Foto de <%= director.nombre %>">
+                    <% } %>
+                    <div class="persona-info">
+                        <h2><%= director.nombre %></h2>
+                        <p><strong>Fecha de Nacimiento:</strong> <%= director.fecha_nacimiento %></p>
+                        <p><strong>Nacionalidad:</strong> <%= director.nacionalidad %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
