@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentales - Netflix Database</title>
+    <link rel="icon" type="image/png" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            background-image: url('https://source.unsplash.com/1600x900/?documentary');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .documental {
+            width: 100%;
+            max-width: 600px; 
+            margin: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .documental:hover {
+            transform: scale(1.05);
+        }
+        .documental img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #e50914;
+            margin: 0 auto 40px;
+            width: 100%;
+        }
+        h2 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+        p, .data li {
+            color: #b3b3b3;
+            text-align: left;
+        }
+        .data {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .data li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        .data li::before {
+            content: "• ";
+            color: #e50914;
+        }
+        @media screen and (max-width: 768px) {
+            .documental {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Documentales Disponibles en Netflix</h1>
+        <% documentales.forEach(documental => { %>
+            <div class="documental">
+                <% if (documental.titulo === "The Social Dilemma") { %>
+                    <img src="https://e00-telva.uecdn.es/assets/multimedia/imagenes/2020/09/23/16008529373493.jpg" alt="Portada de The Social Dilemma">
+                <% } else if (documental.titulo === "13th") { %>
+                    <img src="https://m.media-amazon.com/images/I/81qRXEiaxVL._AC_UF894,1000_QL80_.jpg" alt="Portada de 13th">
+                <% } else if (documental.titulo === "Fahrenheit 9/11") { %>
+                    <img src="https://beersandpolitics.com/wp-content/uploads/2019/01/Fahrenheit.jpg" alt="Portada de Fahrenheit 9/11">
+                <% } else if (documental.titulo === "An Inconvenient Truth") { %>
+                    <img src="https://m.media-amazon.com/images/I/51h0q6RjpqL._AC_UF894,1000_QL80_.jpg" alt="Portada de An Inconvenient Truth">
+                <% } else if (documental.titulo === "Bowling for Columbine") { %>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENNAy1t6EirvlUgxK7f_0N4RIrHm3rPhO-c-GyPo70A&s" alt="Portada de Bowling for Columbine">
+                <% } else if (documental.titulo === "Super Size Me") { %>
+                    <img src="https://m.media-amazon.com/images/I/71ObWfFFPUL._AC_UF1000,1000_QL80_.jpg" alt="Portada de Super Size Me">
+                <% } else if (documental.titulo === "Blackfish") { %>
+                    <img src="https://m.media-amazon.com/images/I/9166VerFeEL._AC_UF894,1000_QL80_.jpg" alt="Portada de Blackfish">
+                <% } else if (documental.titulo === "Inside Job") { %>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/InsideJob2010Poster.jpg/220px-InsideJob2010Poster.jpg" alt="Portada de Inside Job">
+                <% } else if (documental.titulo === "Citizenfour") { %>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Citizenfour_poster.jpg" alt="Portada de Citizenfour">
+                <% } else { %>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/19/March_of_the_penguins_poster.jpg" alt="Portada de <%= documental.titulo %>">
+                <% } %>
+                <div class="documental-info">
+                    <h2><%= documental.titulo %> (<%= documental.pais %>)</h2>
+                    <ul class="data">
+                        <li><strong>Director:</strong> <%= documental.director %></li>
+                        <li><strong>Género:</strong> <%= documental.genero %></li>
+                        <li><strong>Idioma:</strong> <%= documental.idioma %></li>
+                        <li><strong>Fecha de Lanzamiento:</strong> <%= new Date(documental.fecha_lanzamiento).toLocaleDateString('es-ES') %></li>
+                        <li><strong>Duración:</strong> <%= documental.duracion %> minutos</li>
+                    </ul>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

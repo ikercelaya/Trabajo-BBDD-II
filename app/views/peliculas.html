@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas - Netflix Database</title>
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            background-image: url('https://source.unsplash.com/1600x900/?cinema');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .pelicula {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .pelicula:hover {
+            transform: scale(1.05);
+        }
+        .pelicula-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .pelicula-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #e50914;
+            margin: 0 auto 40px;
+            width: 100%;
+        }
+        h2 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+        p, .data li {
+            color: #b3b3b3;
+            text-align: left;
+        }
+        .data {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .data li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        .data li::before {
+            content: "• ";
+            color: #e50914;
+        }
+        @media screen and (max-width: 768px) {
+            .pelicula {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Películas Disponibles en Netflix</h1>
+        <div class="peliculas">
+            <% peliculas.forEach(pelicula => { %>
+                <div class="pelicula">
+                    <div class="pelicula-img">
+                        <% if (pelicula.titulo === "Inception") { %>
+                            <img src="https://source.unsplash.com/featured/?inception" alt="Portada de Inception">
+                        <% } else if (pelicula.titulo === "The Matrix") { %>
+                            <img src="https://m.media-amazon.com/images/I/91DmUpvEclL._AC_UF894,1000_QL80_.jpg" alt="Portada de The Matrix">
+                        <% } else if (pelicula.titulo === "Interstellar") { %>
+                            <img src="https://source.unsplash.com/featured/?interstellar" alt="Portada de Interstellar">
+                        <% } else if (pelicula.titulo === "Pulp Fiction") { %>
+                            <img src="https://m.media-amazon.com/images/I/81C6HlifbeL._AC_UF894,1000_QL80_.jpg" alt="Portada de Pulp Fiction">
+                        <% } else if (pelicula.titulo === "Avatar") { %>
+                            <img src="https://m.media-amazon.com/images/I/71nHKoF+OJL._AC_UF1000,1000_QL80_.jpg" alt="Portada de Avatar">
+                        <% } else if (pelicula.titulo === "Titanic") { %>
+                            <img src="https://m.media-amazon.com/images/I/91+3yCdY40L._AC_UF894,1000_QL80_.jpg" alt="Portada de Titanic">
+                        <% } else if (pelicula.titulo === "The Godfather") { %>
+                            <img src="https://m.media-amazon.com/images/I/71PP8de5X3L._AC_UF894,1000_QL80_.jpg" alt="Portada de The Godfather">
+                        <% } else if (pelicula.titulo === "The Dark Knight") { %>
+                            <img src="https://i5.walmartimages.com/seo/The-Dark-Knight-DVD-Warner-Home-Video-Action-Adventure_089197c5-0069-4696-aa2c-5b94b62b9426.425a1a3802859e4c0deff713bffc09cc.jpeg" alt="Portada de The Dark Knight">
+                        <% } else if (pelicula.titulo === "Forrest Gump") { %>
+                            <img src="https://img.redbull.com/images/c_crop,x_1461,y_0,h_4016,w_3012/c_fill,w_450,h_600/q_auto:low,f_auto/redbullcom/2020/4/14/llyt3hdtwxq4fuoh8kmk/rob-pope-verdadero-forrest-gump" alt="Portada de Forrest Gump">
+                        <% } else { %>
+                            <img src="https://m.media-amazon.com/images/I/81wnM+KZB5L._AC_UF894,1000_QL80_.jpg" alt="Portada de <%= pelicula.titulo %>">
+                        <% } %>
+                    </div>
+                    <div class="pelicula-info">
+                        <h2><%= pelicula.titulo %> (<%= pelicula.pais %>)</h2>
+                        <ul class="data">
+                            <li><strong>Director:</strong> <%= pelicula.director %></li>
+                            <li><strong>Género:</strong> <%= pelicula.genero %></li>
+                            <li><strong>Idioma:</strong> <%= pelicula.idioma %></li>
+                            <li><strong>Fecha de Lanzamiento:</strong> <%= pelicula.fecha_lanzamiento %></li>
+                            <li><strong>Duración:</strong> <%= pelicula.duracion %> minutos</li>
+                            <li><strong>Calificación:</strong> <%= pelicula.calificacion %></li>
+                        </ul>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
