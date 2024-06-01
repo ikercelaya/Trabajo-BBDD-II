@@ -73,6 +73,18 @@
             content: "• ";
             color: #e50914;
         }
+        .home-link {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e50914;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
         @media screen and (max-width: 768px) {
             .documental {
                 width: 100%;
@@ -81,6 +93,7 @@
     </style>
 </head>
 <body>
+    <a href="/" class="home-link">Return to Home</a>
     <div class="container">
         <h1>Documentales Disponibles en Netflix</h1>
         <% documentales.forEach(documental => { %>

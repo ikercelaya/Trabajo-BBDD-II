@@ -1,0 +1,110 @@
+[{
+    "_id": {"$oid": "e17b69d9b2084b8b98ccac20"},
+    "id": 1,
+    "titulo": "The Social Dilemma",
+    "director": "Jeff Orlowski",
+    "fecha_lanzamiento": "2020-01-26",
+    "genero": "Documentary",
+    "duracion": 94,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "7254d726fbf5485d8e5b3fa3"},
+    "id": 2,
+    "titulo": "13th",
+    "director": "Ava DuVernay",
+    "fecha_lanzamiento": "2016-10-07",
+    "genero": "Documentary",
+    "duracion": 100,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "0bda1ab3e83447628ec716b5"},
+    "id": 3,
+    "titulo": "Fahrenheit 9/11",
+    "director": "Michael Moore",
+    "fecha_lanzamiento": "2004-06-25",
+    "genero": "Documentary, Drama, War",
+    "duracion": 122,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "b5bb6dd2bfd342888ce52283"},
+    "id": 4,
+    "titulo": "An Inconvenient Truth",
+    "director": "Davis Guggenheim",
+    "fecha_lanzamiento": "2006-05-24",
+    "genero": "Documentary",
+    "duracion": 96,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "84bd6a2fa2da495482afcc02"},
+    "id": 5,
+    "titulo": "Bowling for Columbine",
+    "director": "Michael Moore",
+    "fecha_lanzamiento": "2002-10-11",
+    "genero": "Documentary, Crime, Drama",
+    "duracion": 120,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "1ce8406ebe4945bc8448d32e"},
+    "id": 6,
+    "titulo": "Super Size Me",
+    "director": "Morgan Spurlock",
+    "fecha_lanzamiento": "2004-01-22",
+    "genero": "Documentary, Comedy, Drama",
+    "duracion": 100,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "902321e5d5b14da38669869e"},
+    "id": 7,
+    "titulo": "Blackfish",
+    "director": "Gabriela Cowperthwaite",
+    "fecha_lanzamiento": "2013-01-19",
+    "genero": "Documentary, Drama",
+    "duracion": 83,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "6c8a4b85ca0e41b19e2e5ccc"},
+    "id": 8,
+    "titulo": "Inside Job",
+    "director": "Charles Ferguson",
+    "fecha_lanzamiento": "2010-10-08",
+    "genero": "Documentary, Crime",
+    "duracion": 109,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "e53f575c844b4d69bf2cbcd0"},
+    "id": 9,
+    "titulo": "Citizenfour",
+    "director": "Laura Poitras",
+    "fecha_lanzamiento": "2014-10-10",
+    "genero": "Documentary, Biography, Thriller",
+    "duracion": 114,
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "9a616bbf739041b48179bf79"},
+    "id": 10,
+    "titulo": "March of the Penguins",
+    "director": "Luc Jacquet",
+    "fecha_lanzamiento": "2005-01-26",
+    "genero": "Documentary",
+    "duracion": 80,
+    "pais": "France",
+    "idioma": "French, English"
+}]
