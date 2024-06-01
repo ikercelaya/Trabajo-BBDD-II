@@ -1,0 +1,110 @@
+[{
+    "_id": {"$oid": "bae6dbe9603b47a4814e62b7"},
+    "id": 1,
+    "titulo": "Breaking Bad",
+    "creador": "Vince Gilligan",
+    "temporadas": 5,
+    "fecha_lanzamiento": "2008-01-20",
+    "genero": "Crime, Drama, Thriller",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "231c5d29537046c080c7fc58"},
+    "id": 2,
+    "titulo": "Game of Thrones",
+    "creador": "David Benioff, D.B. Weiss",
+    "temporadas": 8,
+    "fecha_lanzamiento": "2011-04-17",
+    "genero": "Action, Adventure, Drama",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "50246273349b4d49a7c53063"},
+    "id": 3,
+    "titulo": "The Wire",
+    "creador": "David Simon",
+    "temporadas": 5,
+    "fecha_lanzamiento": "2002-06-02",
+    "genero": "Crime, Drama, Thriller",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "b6f0679818f64883851bdde8"},
+    "id": 4,
+    "titulo": "Sherlock",
+    "creador": "Mark Gatiss, Steven Moffat",
+    "temporadas": 4,
+    "fecha_lanzamiento": "2010-07-25",
+    "genero": "Crime, Drama, Mystery",
+    "pais": "UK",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "7e4b188a81014e7899d5a472"},
+    "id": 5,
+    "titulo": "Stranger Things",
+    "creador": "The Duffer Brothers",
+    "temporadas": 4,
+    "fecha_lanzamiento": "2016-07-15",
+    "genero": "Drama, Fantasy, Horror",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "17a1beac0f63442badc9ae1b"},
+    "id": 6,
+    "titulo": "Westworld",
+    "creador": "Jonathan Nolan, Lisa Joy",
+    "temporadas": 3,
+    "fecha_lanzamiento": "2016-10-02",
+    "genero": "Drama, Mystery, Sci-Fi",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "601fe18946b34aacbc76276d"},
+    "id": 7,
+    "titulo": "Black Mirror",
+    "creador": "Charlie Brooker",
+    "temporadas": 5,
+    "fecha_lanzamiento": "2011-12-04",
+    "genero": "Drama, Sci-Fi, Thriller",
+    "pais": "UK",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "f8c4f096d8c0491ea3f96261"},
+    "id": 8,
+    "titulo": "Friends",
+    "creador": "David Crane, Marta Kauffman",
+    "temporadas": 10,
+    "fecha_lanzamiento": "1994-09-22",
+    "genero": "Comedy, Romance",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "0483c666401d4e50aead3e49"},
+    "id": 9,
+    "titulo": "The Sopranos",
+    "creador": "David Chase",
+    "temporadas": 6,
+    "fecha_lanzamiento": "1999-01-10",
+    "genero": "Crime, Drama",
+    "pais": "USA",
+    "idioma": "English"
+},
+{
+    "_id": {"$oid": "df42c1c6afa647689ec3e5a8"},
+    "id": 10,
+    "titulo": "The Crown",
+    "creador": "Peter Morgan",
+    "temporadas": 4,
+    "fecha_lanzamiento": "2016-11-04",
+    "genero": "Biography, Drama, History",
+    "pais": "UK",
+    "idioma": "English"
+}]
