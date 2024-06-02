@@ -1,16 +1,27 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
-const { ObjectId } = mongoose.Types; // Importar ObjectId
+const { ObjectId } = mongoose.Types;
 
 // Importa los modelos desde la nueva estructura
-const actoresRouters = require('./app/models/actor');
-const directoresRouters = require('./app/models/director');
-const documentalesRouters = require('./app/models/documental');
-const peliculasRouters = require('./app/models/pelicula');
-const seriesRouters = require('./app/models/serie');
+const actor = require('./app/models/actor');
+const director = require('./app/models/director');
+const documental = require('./app/models/documental');
+const pelicula = require('./app/models/pelicula');
+const serie = require('./app/models/serie');
 
-const dataFolderPath = path.resolve(__dirname, 'data');
+// Actualizar la ruta del directorio de datos
+const dataFolderPath = path.resolve(__dirname, 'app', 'data');
+
+// Log para verificar la ruta y los archivos existentes
+console.log(Intentando acceder al directorio: ${dataFolderPath});
+fs.readdir(dataFolderPath, (err, files) => {
+  if (err) {
+    console.error('Error leyendo el directorio de datos:', err);
+  } else {
+    console.log('Archivos en el directorio de datos:', files);
+  }
+});
 
 // Conectar a MongoDB
 mongoose.connect('mongodb://localhost:27017/netflix')
@@ -28,26 +39,20 @@ mongoose.connect('mongodb://localhost:27017/netflix')
     });
 
 const importData = async () => {
+    const filesToImport = ['actor', 'director', 'documental', 'pelicula', 'serie'];
     try {
-        const actorData = fs.readFileSync(`${dataFolderPath}/actor.js`, 'utf-8');
-        await actor.create(JSON.parse(actorData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
-
-        const directorData = fs.readFileSync(`${dataFolderPath}/director.js`, 'utf-8');
-        await director.create(JSON.parse(directorData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
-
-        const documentalData = fs.readFileSync(`${dataFolderPath}/documental.js`, 'utf-8');
-        await documental.create(JSON.parse(documentalData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
-
-        const peliculaData = fs.readFileSync(`${dataFolderPath}/pelicula.js`, 'utf-8');
-        await pelicula.create(JSON.parse(peliculaData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
-
-        const serieData = fs.readFileSync(`${dataFolderPath}/serie.js`, 'utf-8');
-        await serie.create(JSON.parse(serieData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
-
+        for (const file of filesToImport) {
+            const filePath = ${dataFolderPath}/${file}.js;
+            const data = fs.readFileSync(filePath, 'utf-8');
+            await eval(file).create(JSON.parse(data).map(item => ({
+                ...item,
+                _id: new ObjectId(item._id['$oid'])
+            })));
+        }
         console.log('Data imported successfully');
         process.exit();
     } catch (err) {
-        console.error('Error importing data:', err);
+        console.error(Error importing data from file: ${err.message});
         process.exit(1);
     }
 };
