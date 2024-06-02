@@ -14,7 +14,7 @@ const serie = require('./app/models/serie');
 const dataFolderPath = path.resolve(__dirname, 'app', 'data');
 
 // Log para verificar la ruta y los archivos existentes
-console.log(Intentando acceder al directorio: ${dataFolderPath});
+console.log(`Intentando acceder al directorio: ${dataFolderPath}`);
 fs.readdir(dataFolderPath, (err, files) => {
   if (err) {
     console.error('Error leyendo el directorio de datos:', err);
@@ -42,7 +42,7 @@ const importData = async () => {
     const filesToImport = ['actor', 'director', 'documental', 'pelicula', 'serie'];
     try {
         for (const file of filesToImport) {
-            const filePath = ${dataFolderPath}/${file}.js;
+            const filePath = `${dataFolderPath}/${file}.js`;
             const data = fs.readFileSync(filePath, 'utf-8');
             await eval(file).create(JSON.parse(data).map(item => ({
                 ...item,
@@ -52,7 +52,7 @@ const importData = async () => {
         console.log('Data imported successfully');
         process.exit();
     } catch (err) {
-        console.error(Error importing data from file: ${err.message});
+        console.error(`Error importing data from file: ${err.message}`);
         process.exit(1);
     }
 };
