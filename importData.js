@@ -4,11 +4,11 @@ const path = require('path');
 const { ObjectId } = mongoose.Types; // Importar ObjectId
 
 // Importa los modelos desde la nueva estructura
-const actoresRouters = require('./app/models/actores');
-const directoresRouters = require('./app/models/directores');
-const documentalesRouters = require('./app/models/documentales');
-const peliculasRouters = require('./app/models/peliculas');
-const seriesRouters = require('./app/models/series');
+const actoresRouters = require('./app/models/actor');
+const directoresRouters = require('./app/models/director');
+const documentalesRouters = require('./app/models/documental');
+const peliculasRouters = require('./app/models/pelicula');
+const seriesRouters = require('./app/models/serie');
 
 const dataFolderPath = path.resolve(__dirname, 'data');
 
@@ -29,20 +29,20 @@ mongoose.connect('mongodb://localhost:27017/netflix')
 
 const importData = async () => {
     try {
-        const actoresData = fs.readFileSync(`${dataFolderPath}/actor.js`, 'utf-8');
-        await actor.create(JSON.parse(actoresData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
+        const actorData = fs.readFileSync(`${dataFolderPath}/actor.js`, 'utf-8');
+        await actor.create(JSON.parse(actorData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
 
-        const directoresData = fs.readFileSync(`${dataFolderPath}/director.js`, 'utf-8');
-        await director.create(JSON.parse(directoresData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
+        const directorData = fs.readFileSync(`${dataFolderPath}/director.js`, 'utf-8');
+        await director.create(JSON.parse(directorData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
 
-        const documentalesData = fs.readFileSync(`${dataFolderPath}/documental.js`, 'utf-8');
-        await documnetal.create(JSON.parse(documentalesData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
+        const documentalData = fs.readFileSync(`${dataFolderPath}/documental.js`, 'utf-8');
+        await documental.create(JSON.parse(documentalData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
 
-        const peliculasData = fs.readFileSync(`${dataFolderPath}/pelicula.js`, 'utf-8');
-        await pelicula.create(JSON.parse(peliculasData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
+        const peliculaData = fs.readFileSync(`${dataFolderPath}/pelicula.js`, 'utf-8');
+        await pelicula.create(JSON.parse(peliculaData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
 
-        const seriesData = fs.readFileSync(`${dataFolderPath}/serie.js`, 'utf-8');
-        await series.create(JSON.parse(seriesData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
+        const serieData = fs.readFileSync(`${dataFolderPath}/serie.js`, 'utf-8');
+        await serie.create(JSON.parse(serieData).map(data => ({ ...data, _id: new ObjectId(data._id['$oid']) })));
 
         console.log('Data imported successfully');
         process.exit();
